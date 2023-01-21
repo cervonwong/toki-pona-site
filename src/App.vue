@@ -1,12 +1,11 @@
 <template>
-  <div id="nav">
+  <nav>
     <router-link to="/">Home</router-link>
     |
     <router-link to="/dict">Dictionary</router-link>
     |
     <router-link to="/about">About</router-link>
-    <br />~~~~~~~~~~~~~~~~~~~~~~~~~~~
-  </div>
+  </nav>
   <router-view />
 </template>
 
@@ -17,15 +16,18 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-#nav {
+nav {
+  border: darkgray 0.1rem;
+  border-style: solid;
   padding: 1rem;
+  display: inline-block;
 
   a {
     font-weight: bold;
-    color: #2c3e50;
+    color: black;
 
     &.router-link-exact-active {
-      color: grey;
+      color: darkgray;
     }
   }
 }
