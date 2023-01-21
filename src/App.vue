@@ -5,19 +5,20 @@
     <router-link to="/dict">Dictionary</router-link>
     |
     <router-link to="/about">About</router-link>
+    <br />~~~~~~~~~~~~~~~~~~~~~~~~~~~
   </div>
   <router-view />
 </template>
 
 <style lang="scss">
 #app {
-  font-family: "Times New Roman", serif;
+  font-family: Lora, serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 #nav {
-  padding: 30px;
+  padding: 1rem;
 
   a {
     font-weight: bold;
