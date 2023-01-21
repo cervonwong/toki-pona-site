@@ -1,6 +1,6 @@
 <template>
   <main>
-    <h1>About</h1>
+    <p>ala li lon ni. :)</p>
   </main>
 </template>
 
