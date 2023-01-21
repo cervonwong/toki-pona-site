@@ -27,4 +27,12 @@ export default {
 main {
   padding: 30px;
 }
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  font-style: italic;
+}
 </style>
