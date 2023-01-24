@@ -4,7 +4,76 @@
   "words": [
     {
       "word": "a",
-      "idea": "emphasis"
+      "idea": "emphasis",
+      "senses": [
+        {
+          "sense": "(emotion)",
+          "pos": "particle",
+          "examples": [
+            {
+              "sentence": "sina suli a!",
+              "translations": [
+                "You're very important.",
+                "You're huge!"
+              ]
+            },
+            {
+              "sentence": "moku ni li jaki a!",
+              "translations": [
+                "The food is disgusting!"
+              ]
+            }
+          ]
+        },
+        {
+          "sense": "(emphasis)",
+          "pos": "particle",
+          "examples": [
+            {
+              "sentence": "lipu ni a li lipu mi ala.",
+              "translations": [
+                "This book is not mine."
+              ]
+            },
+            {
+              "sentence": "lape a li pona tawa sijelo.",
+              "translations": [
+                "Sleep is important for your body."
+              ]
+            }
+          ]
+        },
+        {
+          "sense": "(confirmation)",
+          "pos": "particle",
+          "examples": [
+            {
+              "sentence": "sina jo ala jo e ilo sitelen // a, mi jo e ni.",
+              "translations": [
+                "Do you have a pen? // Yep, I do."
+              ]
+            },
+            {
+              "sentence": "sina tawa weka anu seme? // a lon.",
+              "translations": [
+                "Are you leaving? // Yeah I am."
+              ]
+            }
+          ]
+        },
+        {
+          "sense": "(laughter)",
+          "pos": "interjection",
+          "examples": [
+            {
+              "sentence": "a a a!",
+              "translations": [
+                "Ha ha ha!"
+              ]
+            }
+          ]
+        }
+      ]
     },
     {
       "word": "akesi",

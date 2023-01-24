@@ -11,7 +11,7 @@
 
 <style lang="scss">
 #app {
-  font-family: Lora, serif;
+  font-family: "Times New Roman", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

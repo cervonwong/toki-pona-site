@@ -1,9 +1,41 @@
 <template>
   <main>
+    <details>
+      <summary>All words</summary>
+      <span v-for="word in words" :key="word.word">
+        <a :href="'#' + word.word">
+          {{ word.word }}
+        </a>
+        ·
+      </span>
+    </details>
+
     <dl>
-      <div v-for="word in words" :key="word">
-        <dt>{{ word.word }}</dt>
-        <dd>{{ word.idea }}</dd>
+      <div v-for="word in words" :key="word" :id="word.word">
+        <span class="word">{{ word.word }}</span> ·
+        <span class="idea">{{ word.idea }}</span>
+        <ol>
+          <li v-for="sense in word.senses" :key="sense">
+            <span class="sense">{{ sense.sense }}</span>
+            <span class="pos">{{ sense.pos }}</span>
+            <div
+              v-for="example in sense.examples"
+              :key="example"
+              class="example"
+            >
+              <p class="sentence">
+                {{ example.sentence }}
+              </p>
+              <p
+                v-for="translation in example.translations"
+                :key="translation"
+                class="translation"
+              >
+                {{ translation }}
+              </p>
+            </div>
+          </li>
+        </ol>
       </div>
     </dl>
   </main>
@@ -28,11 +60,36 @@ main {
   padding: 0 1rem 0 1rem;
 }
 
-dt {
+details {
+  margin-top: 1rem;
+}
+
+.word {
+  font-size: 1.32rem;
   font-weight: bold;
 }
 
-dd {
+.idea {
+}
+
+.sense {
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+
+.pos {
+  font-size: 0.8rem;
+  color: darkmagenta;
+}
+
+.sentence {
+  line-height: 0;
+}
+
+.translation {
+  color: gray;
+  text-indent: 1rem;
   font-style: italic;
+  line-height: 0;
 }
 </style>
