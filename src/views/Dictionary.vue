@@ -10,34 +10,28 @@
       </span>
     </details>
 
-    <dl>
-      <div v-for="word in words" :key="word" :id="word.word">
-        <span class="word">{{ word.word }}</span> ·
-        <span class="idea">{{ word.idea }}</span>
-        <ol>
-          <li v-for="sense in word.senses" :key="sense">
-            <span class="sense">{{ sense.sense }}</span>
-            <span class="pos">{{ sense.pos }}</span>
-            <div
-              v-for="example in sense.examples"
-              :key="example"
-              class="example"
+    <div v-for="word in words" :key="word" :id="word.word" class="word-div">
+      <span class="word">{{ word.word }}</span> ·
+      <span class="idea">{{ word.idea }}</span>
+      <ol>
+        <li v-for="sense in word.senses" :key="sense">
+          <span class="sense">{{ sense.sense }}</span>
+          <span class="pos">{{ sense.pos }}</span>
+          <div v-for="example in sense.examples" :key="example" class="example">
+            <p class="sentence">
+              {{ example.sentence }}
+            </p>
+            <p
+              v-for="translation in example.translations"
+              :key="translation"
+              class="translation"
             >
-              <p class="sentence">
-                {{ example.sentence }}
-              </p>
-              <p
-                v-for="translation in example.translations"
-                :key="translation"
-                class="translation"
-              >
-                {{ translation }}
-              </p>
-            </div>
-          </li>
-        </ol>
-      </div>
-    </dl>
+              {{ translation }}
+            </p>
+          </div>
+        </li>
+      </ol>
+    </div>
   </main>
 </template>
 
@@ -72,6 +66,10 @@ details {
 .idea {
 }
 
+ol {
+  margin-top: 0;
+}
+
 .sense {
   margin-right: 0.5rem;
   font-weight: bold;
@@ -83,13 +81,13 @@ details {
 }
 
 .sentence {
-  line-height: 0;
+  margin: 0;
 }
 
 .translation {
   color: gray;
   text-indent: 1rem;
   font-style: italic;
-  line-height: 0;
+  margin: 0;
 }
 </style>
