@@ -5,8 +5,8 @@
       <p>
         Toki Pona is a constructed langauge with a vocabulary of around 120+
         words. In this dictionary, the key meanings of each word is provided.
-        Note that Toki Pona is very flexible in its word usage, so you can use
-        any word in almost any part of speech!
+        The fun thing about Toki Pona is that it's very flexible in its word
+        usage, so you can use any word in almost any part of speech!
       </p>
       <p>
         This dictionary is inspired by kala Asi's lipu Linku and lipamanka's
