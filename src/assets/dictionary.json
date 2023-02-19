@@ -77,31 +77,125 @@
     },
     {
       "word": "akesi",
-      "idea": "lizard"
+      "idea": "lizard",
+      "senses": [
+        {
+          "sense": "reptile",
+          "pos": "noun"
+        },
+        {
+          "sense": "amphibian",
+          "pos": "noun"
+        }
+      ]
     },
     {
       "word": "ala",
-      "idea": "void?? no"
+      "idea": "void?? no",
+      "senses": [
+        {
+          "sense": "not",
+          "pos": "adverb"
+        },
+        {
+          "sense": "no",
+          "pos": "exclamation"
+        },
+        {
+          "sense": "no",
+          "pos": "determiner"
+        },
+        {
+          "sense": "nothing",
+          "pos": "noun"
+        }
+      ]
     },
     {
       "word": "alasa",
-      "idea": "goal of attempt??"
+      "idea": "goal of attempt??",
+      "senses": [
+        {
+          "sense": "hunt, search",
+          "pos": "noun"
+        },
+        {
+          "sense": "to hunt, to search",
+          "pos": "verb"
+        },
+        {
+          "sense": "to try",
+          "pos": "verb, pre-verb"
+        }
+      ]
     },
     {
-      "word": "ale",
-      "idea": "all"
+      "word": "ale, ali",
+      "idea": "all",
+      "senses": [
+        {
+          "sense": "all, everything",
+          "pos": "pronoun"
+        },
+        {
+          "sense": "all",
+          "pos": "determiner"
+        }
+      ]
     },
     {
       "word": "anpa",
-      "idea": "low, lowly"
+      "idea": "low, lowly",
+      "senses": [
+        {
+          "sense": "under",
+          "pos": "preposition"
+        },
+        {
+          "sense": "to be humble, to be dependent",
+          "pos": "verb (intr.)"
+        },
+        {
+          "sense": "to defeat, to beat",
+          "pos": "verb (tr.)"
+        }
+      ]
     },
     {
       "word": "ante",
-      "idea": "difference"
+      "idea": "difference",
+      "senses": [
+        {
+          "sense": "different, changed",
+          "pos": "adjective"
+        },
+        {
+          "sense": "other",
+          "pos": "adjective"
+        },
+        {
+          "sense": "to change, to alter",
+          "pos": "verb"
+        }
+      ]
     },
     {
       "word": "anu",
-      "idea": "or"
+      "idea": "or",
+      "senses": [
+        {
+          "sense": "or",
+          "pos": "conjunction"
+        },
+        {
+          "sense": "to choose, to decide",
+          "pos": "verb"
+        },
+        {
+          "sense": "choice",
+          "pos": "noun"
+        }
+      ]
     },
     {
       "word": "apeja",
