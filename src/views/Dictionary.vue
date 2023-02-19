@@ -1,36 +1,43 @@
 <template>
   <main>
-    <details>
-      <summary>All words</summary>
-      <span v-for="word in words" :key="word.word">
-        <a :href="'#' + word.word">
-          {{ word.word }}
-        </a>
-        ·
-      </span>
-    </details>
+    <div class="preamble">
+      <p class="preamble-title">About the dictionary:</p>
+      <p>
+        Toki Pona is a constructed langauge with a vocabulary of around 120+
+        words. In this dictionary, the key meanings of each word is provided.
+        Note that Toki Pona is very flexible in its word usage, so you can use
+        any word in almost any part of speech!
+      </p>
+      <p>
+        This dictionary is inspired by kala Asi's lipu Linku and lipamanka's
+        dictionary. Example sentences are written by me. I will try to use
+        example sentences from real-world usage.
+      </p>
+    </div>
 
     <div v-for="word in words" :key="word" :id="word.word" class="word-div">
-      <span class="word">{{ word.word }}</span> ·
+      <span class="word">{{ word.word }}</span>
+      <span class="idea-separator"> ·</span>
       <span class="idea">{{ word.idea }}</span>
       <ol>
         <li v-for="sense in word.senses" :key="sense">
           <span class="sense">{{ sense.sense }}</span>
           <span class="pos">{{ sense.pos }}</span>
-          <div v-for="example in sense.examples" :key="example" class="example">
-            <p class="sentence">
+          <ul v-for="example in sense.examples" :key="example" class="example">
+            <li class="sentence">
               {{ example.sentence }}
-            </p>
-            <p
-              v-for="translation in example.translations"
-              :key="translation"
-              class="translation"
-            >
-              {{ translation }}
-            </p>
-          </div>
+              <p
+                v-for="translation in example.translations"
+                :key="translation"
+                class="translation"
+              >
+                {{ translation }}
+              </p>
+            </li>
+          </ul>
         </li>
       </ol>
+      <hr />
     </div>
   </main>
 </template>
@@ -64,6 +71,11 @@ details {
 }
 
 .idea {
+  display: none;
+}
+
+.idea-separator {
+  display: none;
 }
 
 ol {
@@ -77,17 +89,39 @@ ol {
 
 .pos {
   font-size: 0.8rem;
-  color: darkmagenta;
+  font-style: italic;
+}
+
+.example {
+  padding-left: 0.5rem;
+  list-style-type: square;
 }
 
 .sentence {
   margin: 0;
+  color: dimgray;
+}
+
+hr {
+  border-color: darkgray;
+  border-style: dashed;
+  border-width: 0.1rem;
 }
 
 .translation {
-  color: gray;
+  color: dimgray;
   text-indent: 1rem;
   font-style: italic;
   margin: 0;
+}
+
+.preamble-title {
+  font-weight: bold;
+}
+
+.preamble {
+  margin: 1rem 0;
+  padding: 1rem;
+  border: dimgray 0.1rem dashed;
 }
 </style>
